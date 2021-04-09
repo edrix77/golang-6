@@ -1,0 +1,58 @@
+<!-- package main
+
+import (
+	"fmt"
+	"sort"
+	"strconv"
+)
+
+func main() {
+	var input string
+	x := make([]int, 3)
+
+	// lens := len(x)
+
+	// var i string
+	// for loop := 0; loop <= lens; loop++ {
+
+	// 	fmt.Printf("#%d Enter a number: ", loop)
+	// 	fmt.Scan(&i)
+	// 	if loop == lens || i == "X" {
+	// 		break
+	// 	} else {
+	// 		y, _ := strconv.Atoi(i)
+
+	// 		x[loop] = y
+	// 	}
+
+	// }
+
+	for input !="X" {
+		var i, err = strconv.Atoi(input)
+		if err != nil {
+			fmt.Println("Unable to parse your input as a number. Error: ", err)
+		} else {
+			x = append(x, i)
+			sort.Ints(x)
+		}
+	}
+	
+	// bubblesort(x, lens)
+
+	fmt.Println(x)
+
+}
+
+func bubblesort(array []int, length int) {
+	var i, j, temp int
+
+	for i = 0; i < length; i++ {
+		for j = 0; j < length-i-1; j++ {
+			if array[j] > array[j+1] {
+				temp = array[j]
+				array[j] = array[j+1]
+				array[j+1] = temp
+			}
+		}
+	}
+} -->
